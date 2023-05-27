@@ -48,7 +48,7 @@ type Transaction struct {
 
 type txdata struct {
 	AccountNonce uint64          `json:"nonce"    gencodec:"required"`
-	Price        *big.Int        `json:"gasPrice" gencodec:"required"`
+	Price        *big.Int        `json:"gasPrice" `
 	GasLimit     uint64          `json:"gas"      gencodec:"required"`
 	GasTipCap    *big.Int        `json:"gasTipCap"`
 	GasFeeCap    *big.Int        `json:"gasFeeCap"`
