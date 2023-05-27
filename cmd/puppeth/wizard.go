@@ -30,9 +30,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/gochain/gochain/v4/common"
-	"github.com/gochain/gochain/v4/core"
-	"github.com/gochain/gochain/v4/log"
+	"github.com/zeus-fyi/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/core"
+	"github.com/zeus-fyi/gochain/v4/log"
 	"golang.org/x/crypto/ssh/terminal"
 )
 

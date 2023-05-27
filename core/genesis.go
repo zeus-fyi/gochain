@@ -26,15 +26,15 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/gochain/gochain/v4/common"
-	"github.com/gochain/gochain/v4/common/hexutil"
-	"github.com/gochain/gochain/v4/common/math"
-	"github.com/gochain/gochain/v4/core/rawdb"
-	"github.com/gochain/gochain/v4/core/state"
-	"github.com/gochain/gochain/v4/core/types"
-	"github.com/gochain/gochain/v4/ethdb"
-	"github.com/gochain/gochain/v4/log"
-	"github.com/gochain/gochain/v4/params"
+	"github.com/zeus-fyi/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/common/hexutil"
+	"github.com/zeus-fyi/gochain/v4/common/math"
+	"github.com/zeus-fyi/gochain/v4/core/rawdb"
+	"github.com/zeus-fyi/gochain/v4/core/state"
+	"github.com/zeus-fyi/gochain/v4/core/types"
+	"github.com/zeus-fyi/gochain/v4/ethdb"
+	"github.com/zeus-fyi/gochain/v4/log"
+	"github.com/zeus-fyi/gochain/v4/params"
 )
 
 //go:generate gencodec -type Genesis -field-override genesisSpecMarshaling -out gen_genesis.go
@@ -155,10 +155,10 @@ func (e *GenesisMismatchError) Error() string {
 // SetupGenesisBlock writes or updates the genesis block in db.
 // The block that will be used is:
 //
-//                          genesis == nil       genesis != nil
-//                       +------------------------------------------
-//     db has no genesis |  main-net default  |  genesis
-//     db has genesis    |  from DB           |  genesis (if compatible)
+//	                     genesis == nil       genesis != nil
+//	                  +------------------------------------------
+//	db has no genesis |  main-net default  |  genesis
+//	db has genesis    |  from DB           |  genesis (if compatible)
 //
 // The stored chain configuration will be updated if it is compatible (i.e. does not
 // specify a fork block below the local head block). In case of a conflict, the

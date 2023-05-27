@@ -27,8 +27,8 @@ import (
 	"path"
 	"strings"
 
-	"github.com/gochain/gochain/v4/common/math"
 	"github.com/urfave/cli"
+	"github.com/zeus-fyi/gochain/v4/common/math"
 )
 
 // Custom type which is registered in the flags library which cli uses for

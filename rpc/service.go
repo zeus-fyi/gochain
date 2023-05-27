@@ -26,7 +26,7 @@ import (
 	"sync"
 	"unicode"
 
-	"github.com/gochain/gochain/v4/log"
+	"github.com/zeus-fyi/gochain/v4/log"
 )
 
 var (

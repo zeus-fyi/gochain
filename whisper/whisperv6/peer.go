@@ -20,16 +20,15 @@ import (
 	"context"
 	"fmt"
 	"math"
+	"sync"
 	"time"
 
 	"go.opencensus.io/trace"
 
-	"sync"
-
-	"github.com/gochain/gochain/v4/common"
-	"github.com/gochain/gochain/v4/log"
-	"github.com/gochain/gochain/v4/p2p"
-	"github.com/gochain/gochain/v4/rlp"
+	"github.com/zeus-fyi/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/log"
+	"github.com/zeus-fyi/gochain/v4/p2p"
+	"github.com/zeus-fyi/gochain/v4/rlp"
 )
 
 // Peer represents a whisper protocol peer connection.

@@ -21,14 +21,14 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/gochain/gochain/v4/common"
-	"github.com/gochain/gochain/v4/common/hexutil"
-	"github.com/gochain/gochain/v4/consensus/clique"
-	"github.com/gochain/gochain/v4/core"
-	"github.com/gochain/gochain/v4/core/rawdb"
-	"github.com/gochain/gochain/v4/core/types"
-	"github.com/gochain/gochain/v4/ethdb"
-	"github.com/gochain/gochain/v4/params"
+	"github.com/zeus-fyi/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/common/hexutil"
+	"github.com/zeus-fyi/gochain/v4/consensus/clique"
+	"github.com/zeus-fyi/gochain/v4/core"
+	"github.com/zeus-fyi/gochain/v4/core/rawdb"
+	"github.com/zeus-fyi/gochain/v4/core/types"
+	"github.com/zeus-fyi/gochain/v4/ethdb"
+	"github.com/zeus-fyi/gochain/v4/params"
 )
 
 // So we can deterministically seed different blockchains

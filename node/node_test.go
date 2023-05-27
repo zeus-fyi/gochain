@@ -25,9 +25,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gochain/gochain/v4/crypto"
-	"github.com/gochain/gochain/v4/p2p"
-	"github.com/gochain/gochain/v4/rpc"
+	"github.com/zeus-fyi/gochain/v4/crypto"
+	"github.com/zeus-fyi/gochain/v4/p2p"
+	"github.com/zeus-fyi/gochain/v4/rpc"
 
 	"github.com/stretchr/testify/assert"
 )

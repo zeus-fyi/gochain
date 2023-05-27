@@ -32,16 +32,16 @@ import (
 
 	"go.opencensus.io/trace"
 
-	"github.com/gochain/gochain/v4/common"
-	"github.com/gochain/gochain/v4/common/mclock"
-	"github.com/gochain/gochain/v4/consensus"
-	"github.com/gochain/gochain/v4/core"
-	"github.com/gochain/gochain/v4/core/types"
-	"github.com/gochain/gochain/v4/eth"
-	"github.com/gochain/gochain/v4/les"
-	"github.com/gochain/gochain/v4/log"
-	"github.com/gochain/gochain/v4/p2p"
-	"github.com/gochain/gochain/v4/rpc"
+	"github.com/zeus-fyi/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/common/mclock"
+	"github.com/zeus-fyi/gochain/v4/consensus"
+	"github.com/zeus-fyi/gochain/v4/core"
+	"github.com/zeus-fyi/gochain/v4/core/types"
+	"github.com/zeus-fyi/gochain/v4/eth"
+	"github.com/zeus-fyi/gochain/v4/les"
+	"github.com/zeus-fyi/gochain/v4/log"
+	"github.com/zeus-fyi/gochain/v4/p2p"
+	"github.com/zeus-fyi/gochain/v4/rpc"
 	"golang.org/x/net/websocket"
 )
 

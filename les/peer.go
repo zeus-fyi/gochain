@@ -26,13 +26,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gochain/gochain/v4/common"
-	"github.com/gochain/gochain/v4/core/types"
-	"github.com/gochain/gochain/v4/eth"
-	"github.com/gochain/gochain/v4/les/flowcontrol"
-	"github.com/gochain/gochain/v4/light"
-	"github.com/gochain/gochain/v4/p2p"
-	"github.com/gochain/gochain/v4/rlp"
+	"github.com/zeus-fyi/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/core/types"
+	"github.com/zeus-fyi/gochain/v4/eth"
+	"github.com/zeus-fyi/gochain/v4/les/flowcontrol"
+	"github.com/zeus-fyi/gochain/v4/light"
+	"github.com/zeus-fyi/gochain/v4/p2p"
+	"github.com/zeus-fyi/gochain/v4/rlp"
 )
 
 var (

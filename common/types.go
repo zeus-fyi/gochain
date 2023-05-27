@@ -28,7 +28,7 @@ import (
 
 	"golang.org/x/crypto/sha3"
 
-	"github.com/gochain/gochain/v4/common/hexutil"
+	"github.com/zeus-fyi/gochain/v4/common/hexutil"
 )
 
 // Lengths of hashes and addresses in bytes.

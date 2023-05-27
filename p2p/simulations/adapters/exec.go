@@ -36,12 +36,12 @@ import (
 	"time"
 
 	"github.com/docker/docker/pkg/reexec"
-	"github.com/gochain/gochain/v4/log"
-	"github.com/gochain/gochain/v4/node"
-	"github.com/gochain/gochain/v4/p2p"
-	"github.com/gochain/gochain/v4/p2p/discover"
-	"github.com/gochain/gochain/v4/rpc"
 	"github.com/gorilla/websocket"
+	"github.com/zeus-fyi/gochain/v4/log"
+	"github.com/zeus-fyi/gochain/v4/node"
+	"github.com/zeus-fyi/gochain/v4/p2p"
+	"github.com/zeus-fyi/gochain/v4/p2p/discover"
+	"github.com/zeus-fyi/gochain/v4/rpc"
 )
 
 // ExecAdapter is a NodeAdapter which runs simulation nodes by executing the

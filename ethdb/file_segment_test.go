@@ -10,9 +10,9 @@ import (
 	"testing"
 	"testing/quick"
 
-	"github.com/gochain/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/common"
 
-	"github.com/gochain/gochain/v4/ethdb"
+	"github.com/zeus-fyi/gochain/v4/ethdb"
 )
 
 func TestFileSegment_Get(t *testing.T) {

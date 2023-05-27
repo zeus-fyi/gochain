@@ -22,8 +22,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/gochain/gochain/v4/log"
 	"github.com/urfave/cli"
+	"github.com/zeus-fyi/gochain/v4/log"
 )
 
 // main is just a boring entry point to set up the CLI app.

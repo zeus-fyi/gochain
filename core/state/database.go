@@ -20,9 +20,9 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/gochain/gochain/v4/common"
-	"github.com/gochain/gochain/v4/trie"
 	lru "github.com/hashicorp/golang-lru"
+	"github.com/zeus-fyi/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/trie"
 )
 
 // Trie cache generation limit after which to evict trie nodes from memory.

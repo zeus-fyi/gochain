@@ -27,19 +27,19 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gochain/gochain/v4/accounts"
-	"github.com/gochain/gochain/v4/accounts/keystore"
-	"github.com/gochain/gochain/v4/common"
-	"github.com/gochain/gochain/v4/common/hexutil"
-	"github.com/gochain/gochain/v4/core/types"
-	"github.com/gochain/gochain/v4/internal/ethapi"
-	"github.com/gochain/gochain/v4/rlp"
-	"github.com/gochain/gochain/v4/signer/core"
-	"github.com/gochain/gochain/v4/signer/fourbyte"
-	"github.com/gochain/gochain/v4/signer/storage"
+	"github.com/zeus-fyi/gochain/v4/accounts"
+	"github.com/zeus-fyi/gochain/v4/accounts/keystore"
+	"github.com/zeus-fyi/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/common/hexutil"
+	"github.com/zeus-fyi/gochain/v4/core/types"
+	"github.com/zeus-fyi/gochain/v4/internal/ethapi"
+	"github.com/zeus-fyi/gochain/v4/rlp"
+	"github.com/zeus-fyi/gochain/v4/signer/core"
+	"github.com/zeus-fyi/gochain/v4/signer/fourbyte"
+	"github.com/zeus-fyi/gochain/v4/signer/storage"
 )
 
-//Used for testing
+// Used for testing
 type headlessUi struct {
 	approveCh chan string // to send approve/deny
 	inputCh   chan string // to send password

@@ -27,17 +27,17 @@ import (
 	"runtime/pprof"
 	"time"
 
-	"github.com/gochain/gochain/v4/cmd/evm/internal/compiler"
-	"github.com/gochain/gochain/v4/cmd/utils"
-	"github.com/gochain/gochain/v4/common"
-	"github.com/gochain/gochain/v4/core"
-	"github.com/gochain/gochain/v4/core/state"
-	"github.com/gochain/gochain/v4/core/vm"
-	"github.com/gochain/gochain/v4/core/vm/runtime"
-	"github.com/gochain/gochain/v4/ethdb"
-	"github.com/gochain/gochain/v4/log"
-	"github.com/gochain/gochain/v4/params"
 	cli "github.com/urfave/cli"
+	"github.com/zeus-fyi/gochain/v4/cmd/evm/internal/compiler"
+	"github.com/zeus-fyi/gochain/v4/cmd/utils"
+	"github.com/zeus-fyi/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/core"
+	"github.com/zeus-fyi/gochain/v4/core/state"
+	"github.com/zeus-fyi/gochain/v4/core/vm"
+	"github.com/zeus-fyi/gochain/v4/core/vm/runtime"
+	"github.com/zeus-fyi/gochain/v4/ethdb"
+	"github.com/zeus-fyi/gochain/v4/log"
+	"github.com/zeus-fyi/gochain/v4/params"
 )
 
 var runCommand = cli.Command{

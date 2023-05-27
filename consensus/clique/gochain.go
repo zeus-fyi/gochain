@@ -3,9 +3,9 @@ package clique
 import (
 	"math/big"
 
-	"github.com/gochain/gochain/v4/consensus"
-	"github.com/gochain/gochain/v4/core/state"
-	"github.com/gochain/gochain/v4/core/types"
+	"github.com/zeus-fyi/gochain/v4/consensus"
+	"github.com/zeus-fyi/gochain/v4/core/state"
+	"github.com/zeus-fyi/gochain/v4/core/types"
 )
 
 // BlockReward is the reward in wei distributed each block.

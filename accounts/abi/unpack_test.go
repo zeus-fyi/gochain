@@ -26,8 +26,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/gochain/gochain/v4/common"
 	"github.com/stretchr/testify/require"
+	"github.com/zeus-fyi/gochain/v4/common"
 )
 
 // TestUnpack tests the general pack/unpack tests in packing_test.go

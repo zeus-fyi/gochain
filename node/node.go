@@ -26,16 +26,16 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/gochain/gochain/v4/accounts"
-	"github.com/gochain/gochain/v4/common"
-	"github.com/gochain/gochain/v4/core"
-	"github.com/gochain/gochain/v4/ethdb"
-	"github.com/gochain/gochain/v4/ethdb/s3"
-	"github.com/gochain/gochain/v4/flock"
-	"github.com/gochain/gochain/v4/internal/debug"
-	"github.com/gochain/gochain/v4/log"
-	"github.com/gochain/gochain/v4/p2p"
-	"github.com/gochain/gochain/v4/rpc"
+	"github.com/zeus-fyi/gochain/v4/accounts"
+	"github.com/zeus-fyi/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/core"
+	"github.com/zeus-fyi/gochain/v4/ethdb"
+	"github.com/zeus-fyi/gochain/v4/ethdb/s3"
+	"github.com/zeus-fyi/gochain/v4/flock"
+	"github.com/zeus-fyi/gochain/v4/internal/debug"
+	"github.com/zeus-fyi/gochain/v4/log"
+	"github.com/zeus-fyi/gochain/v4/p2p"
+	"github.com/zeus-fyi/gochain/v4/rpc"
 )
 
 // Node is a container on which services can be registered.

@@ -26,17 +26,17 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/gochain/gochain/v4/console/prompt"
+	"github.com/zeus-fyi/gochain/v4/console/prompt"
 
-	"github.com/gochain/gochain/v4/cmd/utils"
-	"github.com/gochain/gochain/v4/common"
-	"github.com/gochain/gochain/v4/core"
-	"github.com/gochain/gochain/v4/core/state"
-	"github.com/gochain/gochain/v4/core/types"
-	"github.com/gochain/gochain/v4/eth/downloader"
-	"github.com/gochain/gochain/v4/ethdb"
-	"github.com/gochain/gochain/v4/log"
 	"github.com/urfave/cli"
+	"github.com/zeus-fyi/gochain/v4/cmd/utils"
+	"github.com/zeus-fyi/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/core"
+	"github.com/zeus-fyi/gochain/v4/core/state"
+	"github.com/zeus-fyi/gochain/v4/core/types"
+	"github.com/zeus-fyi/gochain/v4/eth/downloader"
+	"github.com/zeus-fyi/gochain/v4/ethdb"
+	"github.com/zeus-fyi/gochain/v4/log"
 )
 
 var (

@@ -28,17 +28,17 @@ import (
 	"strings"
 	"time"
 
-	"github.com/gochain/gochain/v4/common"
-	"github.com/gochain/gochain/v4/common/hexutil"
-	"github.com/gochain/gochain/v4/core"
-	"github.com/gochain/gochain/v4/core/rawdb"
-	"github.com/gochain/gochain/v4/core/state"
-	"github.com/gochain/gochain/v4/core/types"
-	"github.com/gochain/gochain/v4/internal/ethapi"
-	"github.com/gochain/gochain/v4/params"
-	"github.com/gochain/gochain/v4/rlp"
-	"github.com/gochain/gochain/v4/rpc"
-	"github.com/gochain/gochain/v4/trie"
+	"github.com/zeus-fyi/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/common/hexutil"
+	"github.com/zeus-fyi/gochain/v4/core"
+	"github.com/zeus-fyi/gochain/v4/core/rawdb"
+	"github.com/zeus-fyi/gochain/v4/core/state"
+	"github.com/zeus-fyi/gochain/v4/core/types"
+	"github.com/zeus-fyi/gochain/v4/internal/ethapi"
+	"github.com/zeus-fyi/gochain/v4/params"
+	"github.com/zeus-fyi/gochain/v4/rlp"
+	"github.com/zeus-fyi/gochain/v4/rpc"
+	"github.com/zeus-fyi/gochain/v4/trie"
 )
 
 // PublicEthereumAPI provides an API to access GoChain full node-related

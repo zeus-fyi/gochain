@@ -24,11 +24,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gochain/gochain/v4/event"
-	"github.com/gochain/gochain/v4/log"
-	"github.com/gochain/gochain/v4/p2p"
-	"github.com/gochain/gochain/v4/p2p/discover"
-	"github.com/gochain/gochain/v4/p2p/simulations/adapters"
+	"github.com/zeus-fyi/gochain/v4/event"
+	"github.com/zeus-fyi/gochain/v4/log"
+	"github.com/zeus-fyi/gochain/v4/p2p"
+	"github.com/zeus-fyi/gochain/v4/p2p/discover"
+	"github.com/zeus-fyi/gochain/v4/p2p/simulations/adapters"
 )
 
 var dialBanTimeout = 200 * time.Millisecond
@@ -506,8 +506,8 @@ func (self *Network) Shutdown() {
 	close(self.quitc)
 }
 
-//Reset resets all network properties:
-//emtpies the nodes and the connection list
+// Reset resets all network properties:
+// emtpies the nodes and the connection list
 func (self *Network) Reset() {
 	self.lock.Lock()
 	defer self.lock.Unlock()

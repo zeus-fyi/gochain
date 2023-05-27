@@ -21,9 +21,9 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/gochain/gochain/v4"
-	"github.com/gochain/gochain/v4/common"
-	"github.com/gochain/gochain/v4/core/types"
+	"github.com/zeus-fyi/gochain/v4"
+	"github.com/zeus-fyi/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/core/types"
 )
 
 var (

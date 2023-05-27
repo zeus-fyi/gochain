@@ -22,8 +22,8 @@ import (
 	"math/big"
 	"os"
 
-	"github.com/gochain/gochain/v4/cmd/utils"
 	"github.com/urfave/cli"
+	"github.com/zeus-fyi/gochain/v4/cmd/utils"
 )
 
 var gitCommit = "" // Git SHA1 commit hash of the release (set via linker flags)

@@ -23,8 +23,8 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/gochain/gochain/v4/common/mclock"
-	"github.com/gochain/gochain/v4/log"
+	"github.com/zeus-fyi/gochain/v4/common/mclock"
+	"github.com/zeus-fyi/gochain/v4/log"
 )
 
 const (

@@ -23,10 +23,10 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/gochain/gochain/v4/core/state"
-	"github.com/gochain/gochain/v4/core/vm"
-	"github.com/gochain/gochain/v4/log"
-	"github.com/gochain/gochain/v4/tests"
+	"github.com/zeus-fyi/gochain/v4/core/state"
+	"github.com/zeus-fyi/gochain/v4/core/vm"
+	"github.com/zeus-fyi/gochain/v4/log"
+	"github.com/zeus-fyi/gochain/v4/tests"
 
 	cli "github.com/urfave/cli"
 )

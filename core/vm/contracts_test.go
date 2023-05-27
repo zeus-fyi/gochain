@@ -21,7 +21,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/gochain/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/common"
 )
 
 // precompiledTest defines the input/output pairs for precompiled contract tests.

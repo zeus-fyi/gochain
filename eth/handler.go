@@ -25,17 +25,17 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/gochain/gochain/v4/common"
-	"github.com/gochain/gochain/v4/consensus"
-	"github.com/gochain/gochain/v4/core"
-	"github.com/gochain/gochain/v4/core/types"
-	"github.com/gochain/gochain/v4/eth/downloader"
-	"github.com/gochain/gochain/v4/eth/fetcher"
-	"github.com/gochain/gochain/v4/log"
-	"github.com/gochain/gochain/v4/p2p"
-	"github.com/gochain/gochain/v4/p2p/discover"
-	"github.com/gochain/gochain/v4/params"
-	"github.com/gochain/gochain/v4/rlp"
+	"github.com/zeus-fyi/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/consensus"
+	"github.com/zeus-fyi/gochain/v4/core"
+	"github.com/zeus-fyi/gochain/v4/core/types"
+	"github.com/zeus-fyi/gochain/v4/eth/downloader"
+	"github.com/zeus-fyi/gochain/v4/eth/fetcher"
+	"github.com/zeus-fyi/gochain/v4/log"
+	"github.com/zeus-fyi/gochain/v4/p2p"
+	"github.com/zeus-fyi/gochain/v4/p2p/discover"
+	"github.com/zeus-fyi/gochain/v4/params"
+	"github.com/zeus-fyi/gochain/v4/rlp"
 )
 
 const (

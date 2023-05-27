@@ -24,7 +24,7 @@ import (
 	"os"
 	"runtime/trace"
 
-	"github.com/gochain/gochain/v4/log"
+	"github.com/zeus-fyi/gochain/v4/log"
 )
 
 // StartGoTrace turns on tracing, writing to the given file.

@@ -17,15 +17,14 @@
 package core
 
 import (
-	"github.com/gochain/gochain/v4/core/state"
-	"github.com/gochain/gochain/v4/core/types"
-	"github.com/gochain/gochain/v4/core/vm"
+	"github.com/zeus-fyi/gochain/v4/core/state"
+	"github.com/zeus-fyi/gochain/v4/core/types"
+	"github.com/zeus-fyi/gochain/v4/core/vm"
 )
 
 // Validator is an interface which defines the standard for block validation. It
 // is only responsible for validating block contents, as the header validation is
 // done by the specific consensus engines.
-//
 type Validator interface {
 	// ValidateBody validates the given block's content.
 	ValidateBody(block *types.Block, checkParent bool) error

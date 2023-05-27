@@ -6,7 +6,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/gochain/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/common"
 )
 
 func (g *G1) one() *PointG1 {

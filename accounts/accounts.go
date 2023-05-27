@@ -25,10 +25,10 @@ import (
 
 	"golang.org/x/crypto/sha3"
 
-	"github.com/gochain/gochain/v4"
-	"github.com/gochain/gochain/v4/common"
-	"github.com/gochain/gochain/v4/core/types"
-	"github.com/gochain/gochain/v4/log"
+	"github.com/zeus-fyi/gochain/v4"
+	"github.com/zeus-fyi/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/core/types"
+	"github.com/zeus-fyi/gochain/v4/log"
 )
 
 // Account represents an Ethereum account located at a specific location defined
@@ -181,7 +181,8 @@ type Backend interface {
 // safely used to calculate a signature from.
 //
 // The hash is calulcated as
-//   keccak256("\x19Ethereum Signed Message:\n"${message length}${message}).
+//
+//	keccak256("\x19Ethereum Signed Message:\n"${message length}${message}).
 //
 // This gives context to the signed message and prevents signing of transactions.
 func TextHash(data []byte) []byte {
@@ -193,7 +194,8 @@ func TextHash(data []byte) []byte {
 // safely used to calculate a signature from.
 //
 // The hash is calulcated as
-//   keccak256("\x19Ethereum Signed Message:\n"${message length}${message}).
+//
+//	keccak256("\x19Ethereum Signed Message:\n"${message length}${message}).
 //
 // This gives context to the signed message and prevents signing of transactions.
 func TextAndHash(data []byte) ([]byte, string) {

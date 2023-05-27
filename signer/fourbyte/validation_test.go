@@ -20,9 +20,9 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/gochain/gochain/v4/common"
-	"github.com/gochain/gochain/v4/common/hexutil"
-	"github.com/gochain/gochain/v4/signer/core"
+	"github.com/zeus-fyi/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/common/hexutil"
+	"github.com/zeus-fyi/gochain/v4/signer/core"
 )
 
 func mixAddr(a string) (*common.MixedcaseAddress, error) {

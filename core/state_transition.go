@@ -21,10 +21,10 @@ import (
 	"math"
 	"math/big"
 
-	"github.com/gochain/gochain/v4/common"
-	"github.com/gochain/gochain/v4/core/vm"
-	"github.com/gochain/gochain/v4/log"
-	"github.com/gochain/gochain/v4/params"
+	"github.com/zeus-fyi/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/core/vm"
+	"github.com/zeus-fyi/gochain/v4/log"
+	"github.com/zeus-fyi/gochain/v4/params"
 )
 
 var (
@@ -42,8 +42,10 @@ The state transitioning model does all the necessary work to work out a valid ne
 3) Create a new state object if the recipient is \0*32
 4) Value transfer
 == If contract creation ==
-  4a) Attempt to run transaction data
-  4b) If valid, use result as code for the new state object
+
+	4a) Attempt to run transaction data
+	4b) If valid, use result as code for the new state object
+
 == end ==
 5) Run Script section
 6) Derive new state root

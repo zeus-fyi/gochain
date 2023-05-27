@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/gochain/gochain/v4/cmd/utils"
 	"github.com/urfave/cli"
+	"github.com/zeus-fyi/gochain/v4/cmd/utils"
 )
 
 const (

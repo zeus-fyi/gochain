@@ -27,7 +27,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gochain/gochain/v4/p2p/discover"
+	"github.com/zeus-fyi/gochain/v4/p2p/discover"
 )
 
 func TestMocker(t *testing.T) {

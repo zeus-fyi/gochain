@@ -20,15 +20,14 @@ import (
 	"crypto/ecdsa"
 	"fmt"
 	"math/rand"
-
 	"net"
 	"reflect"
 	"testing"
 	"testing/quick"
 	"time"
 
-	"github.com/gochain/gochain/v4/common"
-	"github.com/gochain/gochain/v4/crypto"
+	"github.com/zeus-fyi/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/crypto"
 )
 
 type nullTransport struct{}

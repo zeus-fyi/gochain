@@ -29,13 +29,13 @@ import (
 
 	"go.opencensus.io/trace"
 
-	"github.com/gochain/gochain/v4/common"
-	"github.com/gochain/gochain/v4/crypto"
-	"github.com/gochain/gochain/v4/log"
-	"github.com/gochain/gochain/v4/p2p"
-	"github.com/gochain/gochain/v4/rlp"
-	"github.com/gochain/gochain/v4/rpc"
 	"github.com/syndtr/goleveldb/leveldb/errors"
+	"github.com/zeus-fyi/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/crypto"
+	"github.com/zeus-fyi/gochain/v4/log"
+	"github.com/zeus-fyi/gochain/v4/p2p"
+	"github.com/zeus-fyi/gochain/v4/rlp"
+	"github.com/zeus-fyi/gochain/v4/rpc"
 	"golang.org/x/crypto/pbkdf2"
 	"golang.org/x/sync/syncmap"
 )

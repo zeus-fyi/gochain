@@ -24,7 +24,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/gochain/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/common"
 )
 
 // Type enumerator

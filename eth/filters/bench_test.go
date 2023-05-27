@@ -23,13 +23,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gochain/gochain/v4/common"
-	"github.com/gochain/gochain/v4/common/bitutil"
-	"github.com/gochain/gochain/v4/core/bloombits"
-	"github.com/gochain/gochain/v4/core/rawdb"
-	"github.com/gochain/gochain/v4/core/types"
-	"github.com/gochain/gochain/v4/ethdb"
-	"github.com/gochain/gochain/v4/node"
+	"github.com/zeus-fyi/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/common/bitutil"
+	"github.com/zeus-fyi/gochain/v4/core/bloombits"
+	"github.com/zeus-fyi/gochain/v4/core/rawdb"
+	"github.com/zeus-fyi/gochain/v4/core/types"
+	"github.com/zeus-fyi/gochain/v4/ethdb"
+	"github.com/zeus-fyi/gochain/v4/node"
 )
 
 func BenchmarkBloomBits512(b *testing.B) {

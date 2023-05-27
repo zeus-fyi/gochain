@@ -11,9 +11,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gochain/gochain/v4/common"
-	"github.com/gochain/gochain/v4/log"
 	"github.com/syndtr/goleveldb/leveldb"
+	"github.com/zeus-fyi/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/log"
 )
 
 // Database errors.

@@ -24,12 +24,12 @@ import (
 	"os"
 
 	"github.com/docker/docker/pkg/reexec"
-	"github.com/gochain/gochain/v4/crypto"
-	"github.com/gochain/gochain/v4/node"
-	"github.com/gochain/gochain/v4/p2p"
-	"github.com/gochain/gochain/v4/p2p/discover"
-	"github.com/gochain/gochain/v4/rpc"
 	"github.com/gorilla/websocket"
+	"github.com/zeus-fyi/gochain/v4/crypto"
+	"github.com/zeus-fyi/gochain/v4/node"
+	"github.com/zeus-fyi/gochain/v4/p2p"
+	"github.com/zeus-fyi/gochain/v4/p2p/discover"
+	"github.com/zeus-fyi/gochain/v4/rpc"
 )
 
 // Node represents a node in a simulation network which is created by a
@@ -38,7 +38,6 @@ import (
 // * SimNode    - An in-memory node
 // * ExecNode   - A child process node
 // * DockerNode - A Docker container node
-//
 type Node interface {
 	// Addr returns the node's address (e.g. an Enode URL)
 	Addr() []byte

@@ -17,13 +17,13 @@
 package core
 
 import (
-	"github.com/gochain/gochain/v4/consensus"
-	"github.com/gochain/gochain/v4/core/state"
-	"github.com/gochain/gochain/v4/core/types"
-	"github.com/gochain/gochain/v4/core/vm"
-	"github.com/gochain/gochain/v4/crypto"
-	"github.com/gochain/gochain/v4/log"
-	"github.com/gochain/gochain/v4/params"
+	"github.com/zeus-fyi/gochain/v4/consensus"
+	"github.com/zeus-fyi/gochain/v4/core/state"
+	"github.com/zeus-fyi/gochain/v4/core/types"
+	"github.com/zeus-fyi/gochain/v4/core/vm"
+	"github.com/zeus-fyi/gochain/v4/crypto"
+	"github.com/zeus-fyi/gochain/v4/log"
+	"github.com/zeus-fyi/gochain/v4/params"
 )
 
 // StateProcessor is a basic Processor, which takes care of transitioning

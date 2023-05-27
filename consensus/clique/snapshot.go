@@ -21,10 +21,10 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/gochain/gochain/v4/common"
-	"github.com/gochain/gochain/v4/core/types"
-	"github.com/gochain/gochain/v4/params"
 	lru "github.com/hashicorp/golang-lru"
+	"github.com/zeus-fyi/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/core/types"
+	"github.com/zeus-fyi/gochain/v4/params"
 )
 
 // Vote represents a single vote that an authorized signer made to modify the

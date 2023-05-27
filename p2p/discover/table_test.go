@@ -20,16 +20,15 @@ import (
 	"crypto/ecdsa"
 	"fmt"
 	"math/rand"
-	"sync"
-
 	"net"
 	"reflect"
+	"sync"
 	"testing"
 	"testing/quick"
 	"time"
 
-	"github.com/gochain/gochain/v4/common"
-	"github.com/gochain/gochain/v4/crypto"
+	"github.com/zeus-fyi/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/crypto"
 )
 
 func TestTable_pingReplace(t *testing.T) {

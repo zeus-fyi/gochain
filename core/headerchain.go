@@ -26,13 +26,13 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/gochain/gochain/v4/common"
-	"github.com/gochain/gochain/v4/consensus"
-	"github.com/gochain/gochain/v4/core/rawdb"
-	"github.com/gochain/gochain/v4/core/types"
-	"github.com/gochain/gochain/v4/log"
-	"github.com/gochain/gochain/v4/params"
 	lru "github.com/hashicorp/golang-lru"
+	"github.com/zeus-fyi/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/consensus"
+	"github.com/zeus-fyi/gochain/v4/core/rawdb"
+	"github.com/zeus-fyi/gochain/v4/core/types"
+	"github.com/zeus-fyi/gochain/v4/log"
+	"github.com/zeus-fyi/gochain/v4/params"
 )
 
 const (
@@ -66,9 +66,10 @@ type HeaderChain struct {
 }
 
 // NewHeaderChain creates a new HeaderChain structure.
-//  getValidator should return the parent's validator
-//  procInterrupt points to the parent's interrupt semaphore
-//  wg points to the parent's shutdown wait group
+//
+//	getValidator should return the parent's validator
+//	procInterrupt points to the parent's interrupt semaphore
+//	wg points to the parent's shutdown wait group
 func NewHeaderChain(chainDb common.Database, config *params.ChainConfig, engine consensus.Engine, procInterrupt func() bool) (*HeaderChain, error) {
 	headerCache, _ := lru.New(headerCacheLimit)
 	tdCache, _ := lru.New(tdCacheLimit)

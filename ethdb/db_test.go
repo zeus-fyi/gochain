@@ -3,8 +3,8 @@ package ethdb_test
 import (
 	"testing"
 
-	"github.com/gochain/gochain/v4/common"
-	"github.com/gochain/gochain/v4/ethdb"
+	"github.com/zeus-fyi/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/ethdb"
 )
 
 func TestStaticPartitioner_Partition(t *testing.T) {

@@ -24,13 +24,13 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/gochain/gochain/v4/accounts/abi/bind"
-	"github.com/gochain/gochain/v4/cmd/utils"
-	"github.com/gochain/gochain/v4/common/compiler"
-	"github.com/gochain/gochain/v4/crypto"
-	"github.com/gochain/gochain/v4/internal/flags"
-	"github.com/gochain/gochain/v4/log"
 	"github.com/urfave/cli"
+	"github.com/zeus-fyi/gochain/v4/accounts/abi/bind"
+	"github.com/zeus-fyi/gochain/v4/cmd/utils"
+	"github.com/zeus-fyi/gochain/v4/common/compiler"
+	"github.com/zeus-fyi/gochain/v4/crypto"
+	"github.com/zeus-fyi/gochain/v4/internal/flags"
+	"github.com/zeus-fyi/gochain/v4/log"
 )
 
 var (

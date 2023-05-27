@@ -27,9 +27,9 @@ import (
 
 	"golang.org/x/crypto/sha3"
 
-	"github.com/gochain/gochain/v4/crypto"
-	"github.com/gochain/gochain/v4/log"
-	"github.com/gochain/gochain/v4/p2p/discover"
+	"github.com/zeus-fyi/gochain/v4/crypto"
+	"github.com/zeus-fyi/gochain/v4/log"
+	"github.com/zeus-fyi/gochain/v4/p2p/discover"
 )
 
 func init() {

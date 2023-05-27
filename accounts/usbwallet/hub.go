@@ -23,9 +23,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/gochain/gochain/v4/accounts"
-	"github.com/gochain/gochain/v4/log"
 	"github.com/karalabe/usb"
+	"github.com/zeus-fyi/gochain/v4/accounts"
+	"github.com/zeus-fyi/gochain/v4/log"
 )
 
 // LedgerScheme is the protocol scheme prefixing account and wallet URLs.

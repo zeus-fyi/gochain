@@ -25,9 +25,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gochain/gochain/v4/log"
-	"github.com/gochain/gochain/v4/p2p/discover"
-	"github.com/gochain/gochain/v4/p2p/netutil"
+	"github.com/zeus-fyi/gochain/v4/log"
+	"github.com/zeus-fyi/gochain/v4/p2p/discover"
+	"github.com/zeus-fyi/gochain/v4/p2p/netutil"
 )
 
 const (

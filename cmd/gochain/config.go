@@ -29,13 +29,13 @@ import (
 
 	cli "github.com/urfave/cli"
 
-	"github.com/gochain/gochain/v4/cmd/utils"
-	"github.com/gochain/gochain/v4/eth"
-	"github.com/gochain/gochain/v4/netstats"
-	"github.com/gochain/gochain/v4/node"
-	"github.com/gochain/gochain/v4/params"
-	whisper "github.com/gochain/gochain/v4/whisper/whisperv6"
 	"github.com/naoina/toml"
+	"github.com/zeus-fyi/gochain/v4/cmd/utils"
+	"github.com/zeus-fyi/gochain/v4/eth"
+	"github.com/zeus-fyi/gochain/v4/netstats"
+	"github.com/zeus-fyi/gochain/v4/node"
+	"github.com/zeus-fyi/gochain/v4/params"
+	whisper "github.com/zeus-fyi/gochain/v4/whisper/whisperv6"
 )
 
 var (

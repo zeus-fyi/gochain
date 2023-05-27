@@ -19,7 +19,7 @@ package state
 import (
 	"math/big"
 
-	"github.com/gochain/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/common"
 )
 
 // journalEntry is a modification entry in the state change journal that can be

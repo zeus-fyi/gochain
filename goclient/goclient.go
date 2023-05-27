@@ -24,13 +24,13 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/gochain/gochain/v4"
-	"github.com/gochain/gochain/v4/common"
-	"github.com/gochain/gochain/v4/common/hexutil"
-	"github.com/gochain/gochain/v4/consensus/clique"
-	"github.com/gochain/gochain/v4/core/types"
-	"github.com/gochain/gochain/v4/rlp"
-	"github.com/gochain/gochain/v4/rpc"
+	"github.com/zeus-fyi/gochain/v4"
+	"github.com/zeus-fyi/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/common/hexutil"
+	"github.com/zeus-fyi/gochain/v4/consensus/clique"
+	"github.com/zeus-fyi/gochain/v4/core/types"
+	"github.com/zeus-fyi/gochain/v4/rlp"
+	"github.com/zeus-fyi/gochain/v4/rpc"
 )
 
 // Client defines typed wrappers for the Ethereum RPC API.

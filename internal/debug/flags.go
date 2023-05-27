@@ -25,12 +25,12 @@ import (
 	"runtime"
 
 	"github.com/fjl/memsize/memsizeui"
-	"github.com/gochain/gochain/v4/log"
-	"github.com/gochain/gochain/v4/log/term"
-	"github.com/gochain/gochain/v4/metrics"
-	"github.com/gochain/gochain/v4/metrics/exp"
 	"github.com/mattn/go-colorable"
 	"github.com/urfave/cli"
+	"github.com/zeus-fyi/gochain/v4/log"
+	"github.com/zeus-fyi/gochain/v4/log/term"
+	"github.com/zeus-fyi/gochain/v4/metrics"
+	"github.com/zeus-fyi/gochain/v4/metrics/exp"
 )
 
 var Memsize memsizeui.Handler

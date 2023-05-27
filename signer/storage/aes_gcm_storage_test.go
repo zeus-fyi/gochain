@@ -23,9 +23,9 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/gochain/gochain/v4/common"
-	"github.com/gochain/gochain/v4/log"
 	colorable "github.com/mattn/go-colorable"
+	"github.com/zeus-fyi/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/log"
 )
 
 func TestEncryption(t *testing.T) {

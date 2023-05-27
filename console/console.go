@@ -29,13 +29,13 @@ import (
 	"syscall"
 
 	"github.com/dop251/goja"
-	"github.com/gochain/gochain/v4/console/prompt"
-	"github.com/gochain/gochain/v4/internal/jsre"
-	"github.com/gochain/gochain/v4/internal/jsre/deps"
-	"github.com/gochain/gochain/v4/internal/web3ext"
-	"github.com/gochain/gochain/v4/rpc"
 	colorable "github.com/mattn/go-colorable"
 	"github.com/peterh/liner"
+	"github.com/zeus-fyi/gochain/v4/console/prompt"
+	"github.com/zeus-fyi/gochain/v4/internal/jsre"
+	"github.com/zeus-fyi/gochain/v4/internal/jsre/deps"
+	"github.com/zeus-fyi/gochain/v4/internal/web3ext"
+	"github.com/zeus-fyi/gochain/v4/rpc"
 )
 
 var (

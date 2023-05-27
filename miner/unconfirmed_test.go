@@ -19,8 +19,8 @@ package miner
 import (
 	"testing"
 
-	"github.com/gochain/gochain/v4/common"
-	"github.com/gochain/gochain/v4/core/types"
+	"github.com/zeus-fyi/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/core/types"
 )
 
 // noopChainRetriever is an implementation of headerRetriever that always

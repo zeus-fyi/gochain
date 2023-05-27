@@ -22,11 +22,11 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/gochain/gochain/v4/common"
-	"github.com/gochain/gochain/v4/common/prque"
-	"github.com/gochain/gochain/v4/consensus"
-	"github.com/gochain/gochain/v4/core/types"
-	"github.com/gochain/gochain/v4/log"
+	"github.com/zeus-fyi/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/common/prque"
+	"github.com/zeus-fyi/gochain/v4/consensus"
+	"github.com/zeus-fyi/gochain/v4/core/types"
+	"github.com/zeus-fyi/gochain/v4/log"
 )
 
 const (

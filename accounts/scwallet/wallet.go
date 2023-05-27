@@ -34,13 +34,13 @@ import (
 	"time"
 
 	pcsc "github.com/gballet/go-libpcsclite"
-	ethereum "github.com/gochain/gochain/v4"
-	"github.com/gochain/gochain/v4/accounts"
-	"github.com/gochain/gochain/v4/common"
-	"github.com/gochain/gochain/v4/core/types"
-	"github.com/gochain/gochain/v4/crypto"
-	"github.com/gochain/gochain/v4/log"
 	"github.com/status-im/keycard-go/derivationpath"
+	ethereum "github.com/zeus-fyi/gochain/v4"
+	"github.com/zeus-fyi/gochain/v4/accounts"
+	"github.com/zeus-fyi/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/core/types"
+	"github.com/zeus-fyi/gochain/v4/crypto"
+	"github.com/zeus-fyi/gochain/v4/log"
 )
 
 // ErrPairingPasswordNeeded is returned if opening the smart card requires pairing with a pairing
@@ -879,6 +879,7 @@ func (s *Session) walletStatus() (*walletStatus, error) {
 }
 
 // derivationPath fetches the wallet's current derivation path from the card.
+//
 //lint:ignore U1000 needs to be added to the console interface
 func (s *Session) derivationPath() (accounts.DerivationPath, error) {
 	response, err := s.Channel.transmitEncrypted(claSCWallet, insStatus, statusP1Path, 0, nil)
@@ -994,6 +995,7 @@ func (s *Session) derive(path accounts.DerivationPath) (accounts.Account, error)
 }
 
 // keyExport contains information on an exported keypair.
+//
 //lint:ignore U1000 needs to be added to the console interface
 type keyExport struct {
 	PublicKey  []byte `asn1:"tag:0"`
@@ -1001,6 +1003,7 @@ type keyExport struct {
 }
 
 // publicKey returns the public key for the current derivation path.
+//
 //lint:ignore U1000 needs to be added to the console interface
 func (s *Session) publicKey() ([]byte, error) {
 	response, err := s.Channel.transmitEncrypted(claSCWallet, insExportKey, exportP1Any, exportP2Pubkey, nil)

@@ -23,12 +23,12 @@ import (
 	"net"
 	"sync"
 
-	"github.com/gochain/gochain/v4/log"
-	"github.com/gochain/gochain/v4/node"
-	"github.com/gochain/gochain/v4/p2p"
-	"github.com/gochain/gochain/v4/p2p/discover"
-	"github.com/gochain/gochain/v4/rpc"
 	"github.com/gorilla/websocket"
+	"github.com/zeus-fyi/gochain/v4/log"
+	"github.com/zeus-fyi/gochain/v4/node"
+	"github.com/zeus-fyi/gochain/v4/p2p"
+	"github.com/zeus-fyi/gochain/v4/p2p/discover"
+	"github.com/zeus-fyi/gochain/v4/rpc"
 )
 
 // SimAdapter is a NodeAdapter which creates in-memory simulation nodes and

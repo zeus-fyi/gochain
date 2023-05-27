@@ -1,11 +1,11 @@
 package ethdb
 
 import (
-	"github.com/gochain/gochain/v4/common"
 	"github.com/syndtr/goleveldb/leveldb"
 	"github.com/syndtr/goleveldb/leveldb/filter"
 	"github.com/syndtr/goleveldb/leveldb/iterator"
 	"github.com/syndtr/goleveldb/leveldb/opt"
+	"github.com/zeus-fyi/gochain/v4/common"
 )
 
 // Ensure implementation implements interface.

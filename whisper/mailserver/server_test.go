@@ -24,9 +24,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gochain/gochain/v4/common"
-	"github.com/gochain/gochain/v4/crypto"
-	whisper "github.com/gochain/gochain/v4/whisper/whisperv6"
+	"github.com/zeus-fyi/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/crypto"
+	whisper "github.com/zeus-fyi/gochain/v4/whisper/whisperv6"
 )
 
 const powRequirement = 0.00001

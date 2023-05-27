@@ -22,8 +22,8 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/gochain/gochain/v4/core/asm"
 	cli "github.com/urfave/cli"
+	"github.com/zeus-fyi/gochain/v4/core/asm"
 )
 
 var disasmCommand = cli.Command{

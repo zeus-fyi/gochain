@@ -23,9 +23,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/gochain/gochain/v4/core"
-	"github.com/gochain/gochain/v4/log"
 	"github.com/olekukonko/tablewriter"
+	"github.com/zeus-fyi/gochain/v4/core"
+	"github.com/zeus-fyi/gochain/v4/log"
 )
 
 // networkStats verifies the status of network components and generates a protip

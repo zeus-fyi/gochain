@@ -22,8 +22,8 @@ import (
 	"io"
 	"net"
 
-	"github.com/gochain/gochain/v4/crypto"
-	"github.com/gochain/gochain/v4/rlp"
+	"github.com/zeus-fyi/gochain/v4/crypto"
+	"github.com/zeus-fyi/gochain/v4/rlp"
 )
 
 // Entry is implemented by known node record entry types.

@@ -17,8 +17,8 @@
 package les
 
 import (
-	"github.com/gochain/gochain/v4/metrics"
-	"github.com/gochain/gochain/v4/p2p"
+	"github.com/zeus-fyi/gochain/v4/metrics"
+	"github.com/zeus-fyi/gochain/v4/p2p"
 )
 
 var (

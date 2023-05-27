@@ -23,10 +23,10 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/gochain/gochain/v4/common"
-	"github.com/gochain/gochain/v4/common/hexutil"
-	"github.com/gochain/gochain/v4/common/math"
-	"github.com/gochain/gochain/v4/core/types"
+	"github.com/zeus-fyi/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/common/hexutil"
+	"github.com/zeus-fyi/gochain/v4/common/math"
+	"github.com/zeus-fyi/gochain/v4/core/types"
 )
 
 // Storage represents a contract's storage.

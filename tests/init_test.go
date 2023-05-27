@@ -30,7 +30,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/gochain/gochain/v4/params"
+	"github.com/zeus-fyi/gochain/v4/params"
 )
 
 var (

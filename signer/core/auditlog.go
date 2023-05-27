@@ -20,10 +20,10 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/gochain/gochain/v4/common"
-	"github.com/gochain/gochain/v4/common/hexutil"
-	"github.com/gochain/gochain/v4/internal/ethapi"
-	"github.com/gochain/gochain/v4/log"
+	"github.com/zeus-fyi/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/common/hexutil"
+	"github.com/zeus-fyi/gochain/v4/internal/ethapi"
+	"github.com/zeus-fyi/gochain/v4/log"
 )
 
 type AuditLogger struct {

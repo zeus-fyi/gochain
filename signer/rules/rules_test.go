@@ -22,13 +22,13 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/gochain/gochain/v4/accounts"
-	"github.com/gochain/gochain/v4/common"
-	"github.com/gochain/gochain/v4/common/hexutil"
-	"github.com/gochain/gochain/v4/core/types"
-	"github.com/gochain/gochain/v4/internal/ethapi"
-	"github.com/gochain/gochain/v4/signer/core"
-	"github.com/gochain/gochain/v4/signer/storage"
+	"github.com/zeus-fyi/gochain/v4/accounts"
+	"github.com/zeus-fyi/gochain/v4/common"
+	"github.com/zeus-fyi/gochain/v4/common/hexutil"
+	"github.com/zeus-fyi/gochain/v4/core/types"
+	"github.com/zeus-fyi/gochain/v4/internal/ethapi"
+	"github.com/zeus-fyi/gochain/v4/signer/core"
+	"github.com/zeus-fyi/gochain/v4/signer/storage"
 )
 
 const JS = `
@@ -242,7 +242,7 @@ func (d *dummyUI) OnApprovedTx(tx ethapi.SignTransactionResult) {
 func (d *dummyUI) OnSignerStartup(info core.StartupInfo) {
 }
 
-//TestForwarding tests that the rule-engine correctly dispatches requests to the next caller
+// TestForwarding tests that the rule-engine correctly dispatches requests to the next caller
 func TestForwarding(t *testing.T) {
 
 	js := ""
@@ -543,7 +543,7 @@ func (d *dontCallMe) OnApprovedTx(tx ethapi.SignTransactionResult) {
 	d.t.Fatalf("Did not expect next-handler to be called")
 }
 
-//TestContextIsCleared tests that the rule-engine does not retain variables over several requests.
+// TestContextIsCleared tests that the rule-engine does not retain variables over several requests.
 // if it does, that would be bad since developers may rely on that to store data,
 // instead of using the disk-based data storage
 func TestContextIsCleared(t *testing.T) {

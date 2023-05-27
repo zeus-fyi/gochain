@@ -26,10 +26,10 @@ import (
 	"time"
 
 	"github.com/gizak/termui"
-	"github.com/gochain/gochain/v4/cmd/utils"
-	"github.com/gochain/gochain/v4/node"
-	"github.com/gochain/gochain/v4/rpc"
 	"github.com/urfave/cli"
+	"github.com/zeus-fyi/gochain/v4/cmd/utils"
+	"github.com/zeus-fyi/gochain/v4/node"
+	"github.com/zeus-fyi/gochain/v4/rpc"
 )
 
 var (

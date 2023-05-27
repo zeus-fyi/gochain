@@ -15,8 +15,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gochain/gochain/v4/ethdb"
-	"github.com/gochain/gochain/v4/ethdb/s3"
+	"github.com/zeus-fyi/gochain/v4/ethdb"
+	"github.com/zeus-fyi/gochain/v4/ethdb/s3"
 )
 
 var (

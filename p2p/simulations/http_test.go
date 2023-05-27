@@ -27,13 +27,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gochain/gochain/v4/core"
-	"github.com/gochain/gochain/v4/event"
-	"github.com/gochain/gochain/v4/node"
-	"github.com/gochain/gochain/v4/p2p"
-	"github.com/gochain/gochain/v4/p2p/discover"
-	"github.com/gochain/gochain/v4/p2p/simulations/adapters"
-	"github.com/gochain/gochain/v4/rpc"
+	"github.com/zeus-fyi/gochain/v4/core"
+	"github.com/zeus-fyi/gochain/v4/event"
+	"github.com/zeus-fyi/gochain/v4/node"
+	"github.com/zeus-fyi/gochain/v4/p2p"
+	"github.com/zeus-fyi/gochain/v4/p2p/discover"
+	"github.com/zeus-fyi/gochain/v4/p2p/simulations/adapters"
+	"github.com/zeus-fyi/gochain/v4/rpc"
 )
 
 // testService implements the node.Service interface and provides protocols

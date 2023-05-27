@@ -19,7 +19,7 @@ package vm
 import (
 	"testing"
 
-	"github.com/gochain/gochain/v4/crypto"
+	"github.com/zeus-fyi/gochain/v4/crypto"
 )
 
 func TestJumpDestAnalysis(t *testing.T) {
