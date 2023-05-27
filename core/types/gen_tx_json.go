@@ -17,7 +17,7 @@ var _ = (*txdataMarshaling)(nil)
 func (t txdata) MarshalJSON() ([]byte, error) {
 	type txdata struct {
 		AccountNonce hexutil.Uint64 `json:"nonce"    gencodec:"required"`
-		Price        *hexutil.Big   `json:"gasPrice"`
+		Price        *hexutil.Big   `json:"gasPrice" gencodec:"required"`
 		GasTipCap    *hexutil.Big   `json:"gasTipCap"`
 		GasFeeCap    *hexutil.Big   `json:"gasFeeCap"`
 		GasLimit     hexutil.Uint64 `json:"gas"      gencodec:"required"`
@@ -50,7 +50,7 @@ func (t txdata) MarshalJSON() ([]byte, error) {
 func (t *txdata) UnmarshalJSON(input []byte) error {
 	type txdata struct {
 		AccountNonce *hexutil.Uint64 `json:"nonce"    gencodec:"required"`
-		Price        *hexutil.Big    `json:"gasPrice" "`
+		Price        *hexutil.Big    `json:"gasPrice" gencodec:"required"`
 		GasTipCap    *hexutil.Big    `json:"gasTipCap"`
 		GasFeeCap    *hexutil.Big    `json:"gasFeeCap"`
 		GasLimit     *hexutil.Uint64 `json:"gas"      gencodec:"required"`
