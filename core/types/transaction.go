@@ -25,6 +25,7 @@ import (
 
 	"github.com/zeus-fyi/gochain/v4/common"
 	"github.com/zeus-fyi/gochain/v4/common/hexutil"
+	"github.com/zeus-fyi/gochain/v4/common/math"
 	"github.com/zeus-fyi/gochain/v4/crypto"
 	"github.com/zeus-fyi/gochain/v4/rlp"
 )
@@ -32,8 +33,9 @@ import (
 //go:generate gencodec -type txdata -field-override txdataMarshaling -out gen_tx_json.go
 
 var (
-	ErrInvalidSig = errors.New("invalid transaction v, r, s values")
-	errNoSigner   = errors.New("missing signing methods")
+	ErrInvalidSig      = errors.New("invalid transaction v, r, s values")
+	ErrGasFeeCapTooLow = errors.New("fee cap less than base fee")
+	errNoSigner        = errors.New("missing signing methods")
 )
 
 type Transaction struct {
@@ -48,6 +50,8 @@ type txdata struct {
 	AccountNonce uint64          `json:"nonce"    gencodec:"required"`
 	Price        *big.Int        `json:"gasPrice" gencodec:"required"`
 	GasLimit     uint64          `json:"gas"      gencodec:"required"`
+	GasTipCap    *big.Int        `json:"gasTipCap"`
+	GasFeeCap    *big.Int        `json:"gasFeeCap"`
 	Recipient    *common.Address `json:"to"       rlp:"nil"` // nil means contract creation
 	Amount       *big.Int        `json:"value"    gencodec:"required"`
 	Payload      []byte          `json:"input"    gencodec:"required"`
@@ -66,21 +70,27 @@ type txdataMarshaling struct {
 	Price        *hexutil.Big
 	GasLimit     hexutil.Uint64
 	Amount       *hexutil.Big
+	GasFeeCap    *hexutil.Big
+	GasTipCap    *hexutil.Big
 	Payload      hexutil.Bytes
 	V            *hexutil.Big
 	R            *hexutil.Big
 	S            *hexutil.Big
 }
 
+func NewV2Transaction(nonce uint64, to common.Address, amount *big.Int, gasLimit uint64, gasPrice, gasFeeCap, gasTipCap *big.Int, data []byte) *Transaction {
+	return newTransaction(nonce, &to, amount, gasLimit, gasPrice, gasFeeCap, gasTipCap, data)
+}
+
 func NewTransaction(nonce uint64, to common.Address, amount *big.Int, gasLimit uint64, gasPrice *big.Int, data []byte) *Transaction {
-	return newTransaction(nonce, &to, amount, gasLimit, gasPrice, data)
+	return newTransaction(nonce, &to, amount, gasLimit, gasPrice, nil, nil, data)
 }
 
 func NewContractCreation(nonce uint64, amount *big.Int, gasLimit uint64, gasPrice *big.Int, data []byte) *Transaction {
-	return newTransaction(nonce, nil, amount, gasLimit, gasPrice, data)
+	return newTransaction(nonce, nil, amount, gasLimit, gasPrice, nil, nil, data)
 }
 
-func newTransaction(nonce uint64, to *common.Address, amount *big.Int, gasLimit uint64, gasPrice *big.Int, data []byte) *Transaction {
+func newTransaction(nonce uint64, to *common.Address, amount *big.Int, gasLimit uint64, gasPrice, gasFeeCap, gasTipCap *big.Int, data []byte) *Transaction {
 	if len(data) > 0 {
 		data = common.CopyBytes(data)
 	}
@@ -100,6 +110,12 @@ func newTransaction(nonce uint64, to *common.Address, amount *big.Int, gasLimit 
 	}
 	if gasPrice != nil {
 		d.Price.Set(gasPrice)
+	}
+	if gasFeeCap != nil {
+		d.GasFeeCap = gasFeeCap
+	}
+	if gasTipCap != nil {
+		d.GasTipCap = gasTipCap
 	}
 
 	return &Transaction{data: d}
@@ -176,6 +192,8 @@ func (tx *Transaction) UnmarshalJSON(input []byte) error {
 func (tx *Transaction) Data() []byte                       { return common.CopyBytes(tx.data.Payload) }
 func (tx *Transaction) Gas() uint64                        { return tx.data.GasLimit }
 func (tx *Transaction) GasPrice() *big.Int                 { return new(big.Int).Set(tx.data.Price) }
+func (tx *Transaction) GasFeeCap() *big.Int                { return new(big.Int).Set(tx.data.GasFeeCap) }
+func (tx *Transaction) GasTipCap() *big.Int                { return new(big.Int).Set(tx.data.GasTipCap) }
 func (tx *Transaction) CmpGasPriceTx(tx2 *Transaction) int { return tx.data.Price.Cmp(tx2.data.Price) }
 func (tx *Transaction) CmpGasPrice(i *big.Int) int         { return tx.data.Price.Cmp(i) }
 func (tx *Transaction) Value() *big.Int                    { return new(big.Int).Set(tx.data.Amount) }
@@ -259,6 +277,28 @@ func (tx *Transaction) Cost() *big.Int {
 
 func (tx *Transaction) RawSignatureValues() (*big.Int, *big.Int, *big.Int) {
 	return tx.data.V, tx.data.R, tx.data.S
+}
+
+// EffectiveGasTip returns the effective miner gasTipCap for the given base fee.
+// Note: if the effective gasTipCap is negative, this method returns both error
+// the actual negative value, _and_ ErrGasFeeCapTooLow
+func (tx *Transaction) EffectiveGasTip(baseFee *big.Int) (*big.Int, error) {
+	if baseFee == nil {
+		return tx.GasTipCap(), nil
+	}
+	var err error
+	gasFeeCap := tx.GasFeeCap()
+	if gasFeeCap.Cmp(baseFee) == -1 {
+		err = ErrGasFeeCapTooLow
+	}
+	return math.BigMin(tx.GasTipCap(), gasFeeCap.Sub(gasFeeCap, baseFee)), err
+}
+
+// EffectiveGasTipValue is identical to EffectiveGasTip, but does not return an
+// error in case the effective gasTipCap is negative
+func (tx *Transaction) EffectiveGasTipValue(baseFee *big.Int) *big.Int {
+	effectiveTip, _ := tx.EffectiveGasTip(baseFee)
+	return effectiveTip
 }
 
 // Transactions is a Transaction slice type for basic sorting.
