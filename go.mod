@@ -1,4 +1,4 @@
-module github.com/gochain/gochain/v4
+module github.com/zeus-fyi/gochain/v4
 
 go 1.20
 
@@ -26,7 +26,6 @@ require (
 	github.com/go-stack/stack v1.8.1
 	github.com/golang/protobuf v1.4.3
 	github.com/golang/snappy v0.0.4
-	github.com/gopherjs/gopherjs v0.0.0-20181103185306-d547d1d9531e // indirect
 	github.com/gorilla/websocket v1.4.2
 	github.com/hashicorp/golang-lru v0.5.5-0.20210104140557-80c98217689d
 	github.com/huin/goupnp v1.0.1-0.20200620063722-49508fba0031
@@ -34,9 +33,7 @@ require (
 	github.com/jackpal/go-nat-pmp v1.0.2-0.20160603034137-1fa385a6f458
 	github.com/julienschmidt/httprouter v1.2.0
 	github.com/karalabe/usb v0.0.0-20191104083709-911d15fe12a9
-	github.com/kylelemons/godebug v1.1.0 // indirect
 	github.com/maruel/panicparse v1.0.2 // indirect
-	github.com/maruel/ut v1.0.2 // indirect
 	github.com/mattn/go-colorable v0.1.7
 	github.com/minio/minio-go v6.0.13+incompatible
 	github.com/mitchellh/go-homedir v1.1.0 // indirect
@@ -49,7 +46,6 @@ require (
 	github.com/peterh/liner v1.1.1-0.20190123174540-a2c9a5303de7
 	github.com/rjeczalik/notify v0.9.1
 	github.com/rs/cors v1.7.0
-	github.com/smartystreets/assertions v0.0.0-20190116191733-b6c0e53d7304 // indirect
 	github.com/status-im/keycard-go v0.0.0-20200402102358-957c09536969
 	github.com/stretchr/testify v1.7.0
 	github.com/syndtr/goleveldb v1.0.1-0.20200815110645-5c35d600f0ca
@@ -62,11 +58,12 @@ require (
 	golang.org/x/sys v0.7.0
 	golang.org/x/text v0.8.0
 	gopkg.in/check.v1 v1.0.0-20180628173108-788fd7840127
-	gopkg.in/ini.v1 v1.51.0 // indirect
 	gopkg.in/natefinch/npipe.v2 v2.0.0-20160621034901-c1b8fa8bdcce
 	gopkg.in/olebedev/go-duktape.v3 v3.0.0-20200619000410-60c24ae608a6
 	gopkg.in/urfave/cli.v1 v1.20.0
 )
+
+require github.com/gochain/gochain/v4 v4.2.0
 
 require (
 	cloud.google.com/go v0.51.0 // indirect
